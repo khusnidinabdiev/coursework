@@ -1,0 +1,14 @@
+D:\Husniddin\C#\HomeApplianceTuto\HomeApplianceTuto\bin\Debug\HomeApplianceTuto.exe.config
+D:\Husniddin\C#\HomeApplianceTuto\HomeApplianceTuto\obj\Debug\HomeApplianceTuto.csprojResolveAssemblyReference.cache
+D:\Husniddin\C#\HomeApplianceTuto\HomeApplianceTuto\obj\Debug\HomeApplianceTuto.AddProduct.resources
+D:\Husniddin\C#\HomeApplianceTuto\HomeApplianceTuto\obj\Debug\HomeApplianceTuto.Login.resources
+D:\Husniddin\C#\HomeApplianceTuto\HomeApplianceTuto\obj\Debug\HomeApplianceTuto.MainForm.resources
+D:\Husniddin\C#\HomeApplianceTuto\HomeApplianceTuto\obj\Debug\HomeApplianceTuto.Selling.resources
+D:\Husniddin\C#\HomeApplianceTuto\HomeApplianceTuto\obj\Debug\HomeApplianceTuto.Splash.resources
+D:\Husniddin\C#\HomeApplianceTuto\HomeApplianceTuto\obj\Debug\HomeApplianceTuto.Properties.Resources.resources
+D:\Husniddin\C#\HomeApplianceTuto\HomeApplianceTuto\obj\Debug\HomeApplianceTuto.ViewStock.resources
+D:\Husniddin\C#\HomeApplianceTuto\HomeApplianceTuto\obj\Debug\HomeApplianceTuto.csproj.GenerateResource.Cache
+D:\Husniddin\C#\HomeApplianceTuto\HomeApplianceTuto\bin\Debug\HomeApplianceTuto.exe
+D:\Husniddin\C#\HomeApplianceTuto\HomeApplianceTuto\bin\Debug\HomeApplianceTuto.pdb
+D:\Husniddin\C#\HomeApplianceTuto\HomeApplianceTuto\obj\Debug\HomeApplianceTuto.exe
+D:\Husniddin\C#\HomeApplianceTuto\HomeApplianceTuto\obj\Debug\HomeApplianceTuto.pdb
