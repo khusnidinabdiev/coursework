@@ -53,5 +53,17 @@ namespace HomeApplianceTuto
         {
             clear();
         }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+            MainForm main = new MainForm();
+            main.Show();
+            this.Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

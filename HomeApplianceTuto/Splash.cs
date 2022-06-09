@@ -16,5 +16,15 @@ namespace HomeApplianceTuto
         {
             InitializeComponent();
         }
+        int startpos = 0;
+        private void Splash_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            startpos += 1;
+        }
     }
 }

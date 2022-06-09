@@ -103,5 +103,17 @@ namespace HomeApplianceTuto
                 printDocument1.Print();
             }
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            Login log = new Login();
+            log.Show();
+            this.Hide();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

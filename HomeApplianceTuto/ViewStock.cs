@@ -81,5 +81,24 @@ namespace HomeApplianceTuto
                 MessageBox.Show(Ex.Message);
             }
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Login log = new Login();
+            log.Show();
+            this.Hide();
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+            MainForm main = new MainForm();
+            main.Show();
+            this.Hide();
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
