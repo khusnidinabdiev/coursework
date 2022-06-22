@@ -26,6 +26,11 @@ namespace HomeApplianceTuto
                 ProdId = Op.count();
                 query = "insert into ProductTbl values("+ProdId+",'" + ProdNameTb.Text + "', '" + BrandCb.SelectedItem.ToString() + "', '" + CategoryCb.SelectedItem.ToString() + "', " + ProdQty.Text + ", " + PriceTb.Text + ")";
                 Op.insertdata(query);
+                ProdNameTb.Text = "";
+                ProdQty.Text = "";
+                BrandCb.SelectedIndex = -1;
+                CategoryCb.SelectedIndex = -1;
+                PriceTb.Text = "";
             }
             catch (Exception Ex)
             {
@@ -64,6 +69,18 @@ namespace HomeApplianceTuto
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+            Form1 main = new Form1();
+            main.Show();
+            this.Hide();
         }
     }
 }

@@ -12,3 +12,6 @@ D:\Husniddin\C#\HomeApplianceTuto\HomeApplianceTuto\bin\Debug\HomeApplianceTuto.
 D:\Husniddin\C#\HomeApplianceTuto\HomeApplianceTuto\bin\Debug\HomeApplianceTuto.pdb
 D:\Husniddin\C#\HomeApplianceTuto\HomeApplianceTuto\obj\Debug\HomeApplianceTuto.exe
 D:\Husniddin\C#\HomeApplianceTuto\HomeApplianceTuto\obj\Debug\HomeApplianceTuto.pdb
+D:\Husniddin\C#\HomeApplianceTuto\HomeApplianceTuto\obj\Debug\HomeApplianceTuto.Location.resources
+D:\Husniddin\C#\HomeApplianceTuto\HomeApplianceTuto\bin\Debug\Zen.Barcode.Core.dll
+D:\Husniddin\C#\HomeApplianceTuto\HomeApplianceTuto\obj\Debug\HomeApplianceTuto.Form1.resources

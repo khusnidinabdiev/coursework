@@ -54,5 +54,12 @@ namespace HomeApplianceTuto
             main.Show();
             this.Hide();
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            Location main = new Location();
+            main.Show();
+            this.Hide();
+        }
     }
 }

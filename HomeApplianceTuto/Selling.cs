@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -30,7 +31,7 @@ namespace HomeApplianceTuto
         int oldQty=0, Pid, newQty;
         private void ProductDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            ProdNameTb.Text = ProductDGV.SelectedRows[0].Cells[1].Value.ToString();
+            ProdIdTb.Text = ProductDGV.SelectedRows[0].Cells[1].Value.ToString();
             //ProdQtyTb.Text = ProductDGV.SelectedRows[0].Cells[4].Value.ToString();
             ProdPriceTb.Text = ProductDGV.SelectedRows[0].Cells[5].Value.ToString();
             oldQty = Convert.ToInt32(ProductDGV.SelectedRows[0].Cells[4].Value.ToString());
@@ -53,7 +54,7 @@ namespace HomeApplianceTuto
                 newRow.CreateCells(BillDGV); ;
 
                 newRow.Cells[0].Value = n + 1;
-                newRow.Cells[1].Value = ProdNameTb;
+                newRow.Cells[1].Value = ProdIdTb;
                 newRow.Cells[2].Value = ProdQtyTb;
                 newRow.Cells[3].Value = ProdPriceTb;
                 newRow.Cells[4].Value = total;
@@ -114,6 +115,59 @@ namespace HomeApplianceTuto
         private void label7_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Location main = new Location();
+            main.Show();
+            this.Hide();
+        }
+
+        private void ProdNameTb_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ProdQtyTb_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BillDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void tb_search_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Application.StartupPath+
+                @"\HomeApplianceDb.accdb");
+
+
+            if(tb_search.Text!="")
+            {
+                ProductDGV.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                OleDbDataAdapter Adap = new OleDbDataAdapter();
+                DataSet ds=new DataSet();
+                DataView dv = new DataView();
+
+                string command = "Select * From ProductTbl Where ProdName like '%" + tb_search.Text + "%';";
+
+                con.Open();
+                Adap = new OleDbDataAdapter(command, con);
+                Adap.Fill(ds);
+                dv = new DataView(ds.Tables[0]);
+                ProductDGV.DataSource = dv;
+                con.Close();
+
+            }
+            else if (tb_search.Text == "")
+            {
+                ProductDGV.Refresh();
+            }
         }
     }
 }

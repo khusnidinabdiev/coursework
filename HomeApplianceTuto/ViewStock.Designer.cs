@@ -44,15 +44,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ProductDGV = new System.Windows.Forms.DataGridView();
             this.button3 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.ProdIdTb = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -117,6 +117,11 @@
             // 
             this.ProdCatCb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ProdCatCb.FormattingEnabled = true;
+            this.ProdCatCb.Items.AddRange(new object[] {
+            "Liquid",
+            "Antibiotic",
+            "Tablet",
+            "Grass"});
             this.ProdCatCb.Location = new System.Drawing.Point(355, 128);
             this.ProdCatCb.Name = "ProdCatCb";
             this.ProdCatCb.Size = new System.Drawing.Size(103, 24);
@@ -136,6 +141,9 @@
             // 
             this.ProdBrandCb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ProdBrandCb.FormattingEnabled = true;
+            this.ProdBrandCb.Items.AddRange(new object[] {
+            "Classic",
+            "Foreign"});
             this.ProdBrandCb.Location = new System.Drawing.Point(255, 128);
             this.ProdBrandCb.Name = "ProdBrandCb";
             this.ProdBrandCb.Size = new System.Drawing.Size(86, 24);
@@ -213,6 +221,44 @@
             this.panel1.Size = new System.Drawing.Size(614, 65);
             this.panel1.TabIndex = 28;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Red;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(589, 1);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(25, 24);
+            this.label11.TabIndex = 32;
+            this.label11.Text = "X";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.White;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label10.ForeColor = System.Drawing.Color.Lime;
+            this.label10.Location = new System.Drawing.Point(80, 40);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(66, 24);
+            this.label10.TabIndex = 31;
+            this.label10.Text = "Home";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.ForeColor = System.Drawing.Color.Lime;
+            this.label2.Location = new System.Drawing.Point(152, 40);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(139, 24);
+            this.label2.TabIndex = 30;
+            this.label2.Text = "Product Stock";
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
@@ -272,44 +318,7 @@
             this.ProdIdTb.Name = "ProdIdTb";
             this.ProdIdTb.Size = new System.Drawing.Size(94, 22);
             this.ProdIdTb.TabIndex = 48;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.White;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.ForeColor = System.Drawing.Color.Lime;
-            this.label10.Location = new System.Drawing.Point(80, 40);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(66, 24);
-            this.label10.TabIndex = 31;
-            this.label10.Text = "Home";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.ForeColor = System.Drawing.Color.Lime;
-            this.label2.Location = new System.Drawing.Point(152, 40);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(139, 24);
-            this.label2.TabIndex = 30;
-            this.label2.Text = "Product Stock";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Red;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(589, 6);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(25, 24);
-            this.label11.TabIndex = 32;
-            this.label11.Text = "X";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
+            this.ProdIdTb.TextChanged += new System.EventHandler(this.ProdIdTb_TextChanged);
             // 
             // ViewStock
             // 

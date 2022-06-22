@@ -37,7 +37,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.PriceTb = new System.Windows.Forms.TextBox();
@@ -49,6 +48,7 @@
             this.ProdQty = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.ProdNameTb = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -57,6 +57,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LimeGreen;
+            this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label2);
@@ -76,6 +77,7 @@
             this.label10.Size = new System.Drawing.Size(25, 24);
             this.label10.TabIndex = 29;
             this.label10.Text = "X";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label9
             // 
@@ -148,25 +150,12 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "Co-coder";
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Lime;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(340, 315);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(157, 29);
-            this.button2.TabIndex = 27;
-            this.button2.Text = "RESET";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Cyan;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(136, 315);
+            this.button1.Location = new System.Drawing.Point(258, 322);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(157, 29);
             this.button1.TabIndex = 20;
@@ -207,12 +196,10 @@
             this.CategoryCb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CategoryCb.FormattingEnabled = true;
             this.CategoryCb.Items.AddRange(new object[] {
-            "Camera",
-            "Gamer",
-            "I3",
-            "I5",
-            "I7",
-            "I9"});
+            "Liquid",
+            "Antibiotic",
+            "Tablet",
+            "Grass"});
             this.CategoryCb.Location = new System.Drawing.Point(378, 189);
             this.CategoryCb.Name = "CategoryCb";
             this.CategoryCb.Size = new System.Drawing.Size(157, 32);
@@ -232,6 +219,9 @@
             // 
             this.BrandCb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.BrandCb.FormattingEnabled = true;
+            this.BrandCb.Items.AddRange(new object[] {
+            "Classic",
+            "Foreign"});
             this.BrandCb.Location = new System.Drawing.Point(114, 189);
             this.BrandCb.Name = "BrandCb";
             this.BrandCb.Size = new System.Drawing.Size(157, 32);
@@ -273,13 +263,25 @@
             this.ProdNameTb.Size = new System.Drawing.Size(157, 29);
             this.ProdNameTb.TabIndex = 16;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.White;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label11.ForeColor = System.Drawing.Color.Lime;
+            this.label11.Location = new System.Drawing.Point(280, 41);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(96, 24);
+            this.label11.TabIndex = 30;
+            this.label11.Text = "QR Code";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
+            // 
             // AddProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(604, 408);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.PriceTb);
@@ -317,7 +319,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox PriceTb;
@@ -331,5 +332,6 @@
         private System.Windows.Forms.TextBox ProdNameTb;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
     }
 }

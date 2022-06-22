@@ -100,5 +100,10 @@ namespace HomeApplianceTuto
         {
             Application.Exit();
         }
+
+        private void ProdIdTb_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
